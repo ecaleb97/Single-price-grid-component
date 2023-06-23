@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background: #E7EFF6;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    
+    display: flex;
+}
+
+.container {
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#box1 {
+    width: 100%;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#box1 #box1-title {
+    color: #38A09F;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#box1 #description {
+    color: #CCDA7C;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#box1 #paragraph {
+    color: #BCC0CB;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+#box2 {
+    background: hsl(179, 62%, 43%);
+    width: 50%;
+    border-bottom-left-radius: 10px;
+}
+
+#box3 {
+    background: #49BDBC;
+    width: 50%;
+    border-bottom-right-radius: 10px;
+}
+
+#box2 #title {
+    color: #DDFAF7;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#box2 .price-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;    
+}
+
+.price-container #price {
+    color: #ECFFFF;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.price-container label {
+    color: #72D4D9;
+}
+
+#box2 #access {
+    color: #B4E2E5;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+#sign-up {
+    background: hsl(71, 73%, 54%);
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    /* box-shadow: 10px -5px 10px #47AF85; */
+}
+
+#sign-up a {
+    text-decoration: none;
+    color: white;
+}
+
+#box3 #title {
+    color: #DDFAF7;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#box3 p {
+    margin-top: 10px;
+    margin-left: 30px;
+
+    font-size: 13px;
+    color: white;
+}
+
+#box3 ul {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#box3 ul li {
+    color: white;
+    font-size: 13px;
+}
+
+@media screen and (width < 670px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #box1,
+    #box2, 
+    #box3 {
+        width: 100%;
+    }
+
+    #box2 {
+        border-bottom-left-radius: 0;
+    }
+
+    #box3 {
+        border-bottom-left-radius: 10px;
+    }
+}
+
+@media screen and (width < 470px) {
+    .container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (height < 415px) {
+    .container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
